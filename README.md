@@ -8,12 +8,12 @@
 
 Add the following lines to feeds.conf in OpenWrt buildroot:
 ```
-src-git pyther git://github.com/pyther/openwrt-feed
+src-git adagari git://github.com/adagari/openwrt-feed
 ```
 
 Update the feed:
 ```
-./scripts/feeds update pyther
+./scripts/feeds update adagari
 ```
 
 Activate the package:
@@ -38,7 +38,7 @@ Instructions based on OpenWrt's wiki [Using the SDK](https://openwrt.org/docs/gu
 3. Update feeds.conf
     ```
     $ cp feeds.conf.default feeds.conf
-    $ echo 'src-git pyther git://github.com/pyther/openwrt-feed' >> feeds.conf
+    $ echo 'src-git adagari git://github.com/adagari/openwrt-feed' >> feeds.conf
     ```
 
 4. Update and install the feeds
@@ -61,7 +61,7 @@ Instructions based on OpenWrt's wiki [Using the SDK](https://openwrt.org/docs/gu
     $ make package/goeap_proxy/compile
     ```
 
-7. Package should be built and located in `./bin/packages/x86_64/pyther/goeap_proxy`
+7. Package should be built and located in `./bin/packages/x86_64/adagari/goeap_proxy`
 
 ## Building OpenWrt Image
 
@@ -78,7 +78,7 @@ Instructions based on OpenWrt's wiki [Using the SDK](https://openwrt.org/docs/gu
 
 3. Copy built package into `./packages`
     ```
-    $ cp ~/build/openwrt-sdk-18.06.4-x86-64_gcc-7.3.0_musl.Linux-x86_64/bin/packages/x86_64/pyther/goeap_proxy_0.200502.3-1_x86_64.ipk ./packages
+    $ cp ~/build/openwrt-sdk-18.06.4-x86-64_gcc-7.3.0_musl.Linux-x86_64/bin/packages/x86_64/adagari/goeap_proxy_0.200502.3-1_x86_64.ipk ./packages
     ```
 
 4. Build Image
