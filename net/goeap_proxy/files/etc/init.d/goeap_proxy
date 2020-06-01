@@ -38,7 +38,5 @@ start_service()
 service_triggers()
 {
     procd_add_reload_trigger "goeap_proxy"
-    procd_add_interface_trigger "interface.*.up" "${router}" /etc/init.d/goeap_proxy restart
-    procd_add_interface_trigger "interface.*.up" "${wan}" /etc/init.d/goeap_proxy restart
 }
 
